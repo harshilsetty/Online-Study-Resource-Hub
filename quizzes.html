@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/quiz.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Quizzes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="subjects.html">Subjects</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                
+                <li><a href="contact.html">Contact Tutor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="quiz">
+            <h2>CSE Quiz</h2>
+            <form id="quiz-form">
+                <div class="quiz-question">
+                    <p>1. What does HTML stand for?</p>
+                    <label><input type="checkbox" name="question1" value="A"> Hyper Text Markup Language</label><br>
+                    <label><input type="checkbox" name="question1" value="B"> High Text Machine Language</label><br>
+                    <label><input type="checkbox" name="question1" value="C"> Hyperlinking Text Marking Language</label><br>
+                    <label><input type="checkbox" name="question1" value="D"> Home Tool Markup Language</label>
+                </div>
+
+                <div class="quiz-question">
+                    <p>2. Which of the following is a JavaScript framework?</p>
+                    <label><input type="checkbox" name="question2" value="A"> Django</label><br>
+                    <label><input type="checkbox" name="question2" value="B"> React</label><br>
+                    <label><input type="checkbox" name="question2" value="C"> Laravel</label><br>
+                    <label><input type="checkbox" name="question2" value="D"> Flask</label>
+                </div>
+
+                <div class="quiz-question">
+                    <p>3. What does CSS stand for?</p>
+                    <label><input type="checkbox" name="question3" value="A"> Computer Style Sheets</label><br>
+                    <label><input type="checkbox" name="question3" value="B"> Cascading Style Sheets</label><br>
+                    <label><input type="checkbox" name="question3" value="C"> Colorful Style Sheets</label><br>
+                    <label><input type="checkbox" name="question3" value="D"> Creative Style Sheets</label>
+                </div>
+
+                <button type="button" onclick="checkAnswers()">Submit</button>
+                <p id="result"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Study Resource Hub. Made by<b> Harshil Somisetty</b></p>
+    </footer>
+</body>
+</html>
